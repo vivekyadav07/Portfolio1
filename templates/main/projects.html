@@ -1,0 +1,144 @@
+
+{% extends 'main/base.html' %}
+
+{% block content %}
+
+{%include 'main/nav.html'%}
+
+{% load static%}
+
+
+
+ <!-- services section start -->
+ <section class="services" id="services">
+    <div class="max-width">
+        <h2 class="title">My Projects & Certification</h2>
+        <div class="serv-content">
+
+
+
+           
+           
+            <div class="card">
+                <div class="box">
+                    <i class="fas fa-paint-brush"></i>
+                    <div class="text">Blog Websites </div>
+                    <p>Using Django made a blog Website and always positively Looks forward to Develop Website according to requirmentsS.</p>
+                    <a href="http://www.vivekyadav.tk/" > Click Here</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="box">
+                    <i class="fas fa-paint-brush"></i>
+                    <div class="text">Blog Websites </div>
+                    <p>Using Django made a blog Website and always positively Looks forward to Develop Website according to requirmentsS.</p>
+                    <a href= "{% static 'images/FITP-2020-04-34.png' %}" > Certificates</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="box">
+                    <i class="fas fa-code"></i>
+                    <div class="text">Django Internship</div>
+                    <p>completed three months Internship From WWW.Foodvybe.com.</p>
+                    <a href= "{% static 'images/foodvybe.pdf' %}" > LOC</a>
+                    <a href= "{% static 'images/foodvybe.png' %}" > Certificates</a>
+            
+                </div>
+            </div>
+
+
+
+
+            <div class="card">
+                <div class="box">
+                    <i class="fas fa-chart-line"></i>
+                    <div class="text">Grocery Bag</div>
+                    <p>Made using Django which is use to works as grocery bag where we can add our shopping list 
+                      and filter accordingly,I with my friends team enthusiastically ready for designing and hosting website.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="box">
+                    <i class="fas fa-code"></i>
+                    <div class="text">ML Project</div>
+                    <p>I've also worked on ML models with two months Internship from Verzeo.</p>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <div class="box">
+                    <i class="fas fa-code"></i>
+                    <div class="text">ML Certification </div>
+                    <p>I've also worked on ML models with two months Internship from Verzeo. 
+                        The Certificates are here.</p>
+                        <a href="{% static 'images/verzeo.jpg'%}"  > Certificates </a>
+                        <a href="{% static 'images/Excellence.jpg'%}" > Certificates of Excellence </a>
+                </div>
+            </div>
+
+
+
+
+
+            <div class="card">
+              <div class="box">
+                  <i class="fas fa-paint-brush"></i>
+                  <div class="text">𝐈𝐏𝐋 𝐬𝐜𝐨𝐫𝐞 𝐩𝐫𝐞𝐝𝐢𝐜𝐭𝐨𝐫 𝐔𝐬𝐢𝐧𝐠 𝐌𝐋</div>
+                  <p>We always positively Looks forward to Develop Website according to our client.</p>
+              </div>
+          </div>
+          <div class="card">
+              <div class="box">
+                  <i class="fas fa-chart-line"></i>
+                  <div class="text">Web Designing/Hosting</div>
+                  <p>I with my friends team enthusiastically ready for designing and hosting clients website.</p>
+              </div>
+          </div>
+          <div class="card">
+              <div class="box">
+                  <i class="fas fa-code"></i>
+                  <div class="text">Projects</div>
+                  <p>Cooming soon!!</p>
+              </div>
+          </div>
+
+
+
+
+        
+
+
+        <div class="card">
+          <div class="box">
+              <i class="fas fa-code"></i>
+              <div class="text">Codathon Certificates </div>
+              <p>Certificate of participation.</p>
+              <a href="{% static 'images/Vivek Kumar Yadav15.jpeg'%}"  > Certificates </a>
+          </div>
+      </div>
+
+
+
+    <div class="card">
+      <div class="box">
+          <i class="fas fa-code"></i>
+          <div class="text">Lets Upgrade Certificates</div>
+          <p>Course of DSA and Python.</p>
+          <a href="{% static 'images/LUDSA1220A329.pdf'%}"  > Certificates DSA </a>
+          <a href="{% static 'images/LUPY1220A0905.pdf'%}" > Certificates Python </a>
+      </div>
+  </div>
+
+
+
+
+           </div>
+        </div>
+    </div>
+</section>
+
+
+{%endblock%}

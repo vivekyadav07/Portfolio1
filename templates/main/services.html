@@ -1,0 +1,44 @@
+
+{% extends 'main/base.html' %}
+
+{% block content %}
+
+{%include 'main/nav.html'%}
+
+{% load static%}
+
+
+
+ <!-- services section start -->
+ <section class="services" id="services">
+    <div class="max-width">
+        <h2 class="title">My services</h2>
+        <div class="serv-content">
+            <div class="card">
+                <div class="box">
+                    <i class="fas fa-paint-brush"></i>
+                    <div class="text">Web Development</div>
+                    <p>We always positively Looks forward to Develop Website according to our client.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="box">
+                    <i class="fas fa-chart-line"></i>
+                    <div class="text">Web Designing/Hosting</div>
+                    <p>I with my friends team enthusiastically ready for designing and hosting clients website.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="box">
+                    <i class="fas fa-code"></i>
+                    <div class="text">ML Project</div>
+                    <p>I've also worked on ML models with two months Internship from Verzeo.</p>
+                </div>
+            </div>
+           </div>
+        </div>
+    </div>
+</section>
+
+
+{%endblock%}

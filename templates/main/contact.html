@@ -1,0 +1,72 @@
+ 
+{% extends 'main/base.html' %}
+
+{% block content %}
+
+{%include 'main/nav.html'%}
+
+ <!-- contact section start -->
+ <section class="contact" id="contact">
+    <div class="max-width">
+        <h2 class="title">Contact me</h2>
+        <div class="contact-content">
+            <div class="column left">
+                <div class="text">Get in Touch</div>
+                <p>Feel free to contact any Time.</p>
+                <div class="icons">
+                    <div class="row">
+                        <i class="fas fa-user"></i>
+                        <div class="info">
+                            <div class="head">Name</div>
+                            <div class="sub-title">Vivek Kumar Yadav</div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div class="info">
+                            <div class="head">Address</div>
+                            <div class="sub-title">Gorakhpur ,India</div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <i class="fas fa-envelope"></i>
+                        <div class="info">
+                            <div class="head">Email</div>
+                            <div class="sub-title">vivek8470@gmail.com</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="column right">
+                <div class="text">Message me</div>
+                
+                <form class="contact-form" action="#" method="POST">
+                    {% csrf_token %}
+
+
+                    <div class="fields">
+                        <div class="field name">
+                            <input name ="name" type="text" class="fullname" placeholder="Name">
+                        </div>
+                        <div class="field email">
+                            <input  name= "email" type="text" class="email-input" placeholder="Email">
+                        </div>
+                    </div>
+                    <div class="field">
+                        <input name = "subject" type="text" class="subject" placeholder="Subject">
+                    </div>
+                    <div class="field textarea">
+                        <textarea name="message" cols="30" rows="10" placeholder="Message.."></textarea>
+                    </div>
+
+                    
+                    <div class="button-area">
+                        <button class="send-msg" type="submit" name="send">Send message</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+{%endblock%}
